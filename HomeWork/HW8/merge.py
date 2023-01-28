@@ -27,12 +27,12 @@ def option():
         cc = int(input('Введите ID студента для вывода по классам: '))
         if cc in cab.class_card['ID']:
             index = cab.class_card['ID'].index(cc)
-            print(f" {cab.class_card['ID'][index]}, {cab.class_card['Номер парты'][index]},{cab.class_card['Ряд'][index]},{cab.class_card['Вид парты'][index]},{cab.class_card['Предмет'][index]}")
-            print('\nХотите выполнить другую операцию??? Y или N: ')
-            num = input()
-            if num == 'Y' or 'y' or 'У' or 'у':
-                option()
-            exit()
+        print(f" {cab.class_card['ID'][index]}, {cab.class_card['Номер парты'][index]},{cab.class_card['Ряд'][index]},{cab.class_card['Вид парты'][index]},{cab.class_card['Предмет'][index]}")
+        print('\nХотите выполнить другую операцию??? Y или N: ')
+        num = input()
+        if num == 'Y' or 'y' or 'У' or 'у':
+            option()
+        exit()
     else:
         print('еще раз')
     exit()
