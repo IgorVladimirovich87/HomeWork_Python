@@ -1,7 +1,7 @@
  
 import pandas as pd
 
-print('----'*30)
+print('----'*1000)
 print('Информация о классах')
 
 class_card = {
